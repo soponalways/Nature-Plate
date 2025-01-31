@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Asowme -->
+    <script src="https://kit.fontawesome.com/48f2a34ae7.js" crossorigin="anonymous"></script>
     <!-- google fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +19,8 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'Accent': '#179800',
+                        'Secondery': '#EFEBE3',
                     },
                     fontFamily:{
                         'Sora':['Sora' , 'serif'],
@@ -35,6 +39,70 @@
     <title>Nature's Plate</title>
 </head>
 <body class="font-Sora">
-    <button class="btn btn-primary text-center">HI</button>
+    <header class="container mx-auto">
+        <!-- Nav bar  -->
+         <nav class="navbar bg-base-100 justify-between">
+            <!-- Logo -->
+            <div>
+                <h2 class="navbar-start w-fit cursor-pointer hidden md:grid"><a href="./"><img src="./assets/logo-header.png" alt=""></a></h2>
+                <h2 class="navbar-start w-fit md:hidden "><a href="./"><img src="./assets/logo-footer.png" alt=""></a></h2>
+            </div>
+            <!-- Navbar Center -->
+                <div  class="navbar-center mx-auto hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 hidden md:flex text-xl">
+                        <li><a>Product </a></li>
+                        <li><a>Services </a></li>
+                        <li><a>Contact us </a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end gap-5 lg:gap-6 hidden md:flex lg:flex w-fit">
+                    <div class=" px-1 flex md:flex-row gap-5 lg:gap-6">
+                        <div class="btn btn-ghost btn-circle"><i class="fa-solid fa-magnifying-glass cursor-pointer"></i></div>
+                        <!-- Cart Item section -->
+                        <div class="dropdown dropdown-end">
+                            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                                <div class="indicator">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                    </svg>
+                                    <span class="badge badge-sm indicator-item">8</span>
+                                </div>
+                            </div>
+                            <div tabindex="0" class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow">
+                                <div class="card-body">
+                                    <span class="text-lg font-bold">8 Items</span>
+                                    <span class="text-info">Subtotal: $999</span>
+                                    <div class="card-actions">
+                                        <button class="btn btn-block bg-Accent">View cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Login or Register -->
+                    <div class="flex gap-3">
+                        <button  class="btn btn-outline border-Accent md:px-6 lg:px-8 hover:bg-Accent text-lg transition duration-300 ">Login</button>
+                        <button class="btn bg-Accent hover:border hover:border-Accent hover:bg-white transition duration-300 md:px-6 lg:px-8 text-lg text-white hover:text-black">Register</button>
+                    </div>
+                </div>
+                <!-- Menu Bar -->
+            <div class="dropdown md:hidden w-fit dropdown-end">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle text-Accent">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                    <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a>Product </a></li>
+                        <li><a>Services </a></li>
+                        <li><a>Contact us </a></li>
+                    </ul>
+            </div>
+         </nav>
+    </header>
+
+
+</div>
 </body>
 </html>
